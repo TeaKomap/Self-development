@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img
+     src="assets/splash.png" 
+     style="position:relative; top: 50px; left: 333px; transform: rotate(90deg); border: 5px solid red; "
+     class ="spin-on-hover"
+     width="100"
+     height="100"
+    /> 
+    <style>
+        .spin-on-hover {
+            transition: transformer 0.5s ease;
+        }
+        .spin-on-hover:hover {
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</body>
+</html>
